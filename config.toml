@@ -1,0 +1,20 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "decryptr"
+theme = "kube"
+description = "An extensible API for breaking captchas."
+Paginate = 4
+[Params]
+  RSSLink = "/index.xml"
+  author = "decryptr" # add your company name
+  github = "decryptr" # add your github profile name
+  twitter = "curso-r" # add your twitter profile
+  email = "contato@curso-r.com"
+
+[[menu.main]]
+    name = "Docs"
+    weight = -100
+    url = "/docs/"
+
+    
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
