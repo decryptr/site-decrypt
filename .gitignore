@@ -1,3 +1,6 @@
 .DS_Store
 .RProj.user/*
 public/*
+.Rproj.user
+.Rhistory
+.RData
