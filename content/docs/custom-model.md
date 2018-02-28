@@ -113,3 +113,5 @@ After training the model we should persist it to disk in order to be able to mak
 save_model_hdf5(model, "rfb.hdf5")
 ```
 
+Now your are able to [make predictions for new captchas](/docs/predictions-model-file/).
+

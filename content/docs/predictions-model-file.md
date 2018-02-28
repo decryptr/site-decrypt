@@ -18,7 +18,7 @@ library(decryptr)
 model <- load_model("model.hdf5")
 ```
 
-### Making predictions for a new captcha
+### Making predictions
 
 After loading the model, one can easily make predictions for a new captcha by running:
 
