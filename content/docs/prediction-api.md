@@ -12,7 +12,7 @@ bref = "decryptr offers a free and simple web API that you can use to break capt
 The web interface needs 2 parameters passed throught a POST request to an endpoint in `decryptr.now.sh`.
 The complete list of endpoints can be found [here]().
 
-The first parameter, `img`, is a base64 encoded image. The second is the api key which you can obtain [here]().
+The first parameter, `img`, is a base64 encoded image. The second is the api key which you can obtain [here](/get-key).
 
 ### From R
 
