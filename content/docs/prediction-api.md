@@ -1,5 +1,5 @@
 +++
-title = "Using the web API for prediction from R"
+title = "Using the web API for prediction"
 description = "Zero config captcha decrypting"
 weight = 10
 draft = false
@@ -14,14 +14,18 @@ The complete list of endpoints can be found [here]().
 
 The first parameter, `img`, is a base64 encoded image. The second is the api key which you can obtain [here]().
 
+### From R
+
 In R, you can make the request by calling:
 
 ```
+# converting the image to base64
 arq <- "path-to-img"
 img <- arq %>%
   readr::read_file_raw() %>%
   base64enc::base64encode()
 
+# post request
 res <- httr::POST(
   "https://decryptr.now.sh/rfb",
   body = list(
