@@ -10,7 +10,7 @@ bref = "decryptr offers a free and simple web API that you can use to break capt
 ### Making predictions
 
 The web interface needs 2 parameters passed throught a POST request to an endpoint in `decryptr.now.sh`.
-The complete list of endpoints can be found [here]().
+The complete list of endpoints can be found [here](/docs/list-models/).
 
 The first parameter, `img`, is a base64 encoded image. The second is the api key which you can obtain [here](/get-key).
 
@@ -19,6 +19,8 @@ The first parameter, `img`, is a base64 encoded image. The second is the api key
 In R, you can make the request by calling:
 
 ```
+library(magrittr)
+
 # converting the image to base64
 arq <- "path-to-img"
 img <- arq %>%

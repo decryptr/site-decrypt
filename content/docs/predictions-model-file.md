@@ -18,6 +18,12 @@ library(decryptr)
 model <- load_model("model.hdf5")
 ```
 
+If you want to load a pre-trained model you can use the name found in [this list](/docs/list-models/) with the `load_model` function.
+
+```
+model <- load_model("rfb") # example using rfb
+```
+
 ### Making predictions
 
 After loading the model, one can easily make predictions for a new captcha by running:
