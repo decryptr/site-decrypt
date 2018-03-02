@@ -23,7 +23,7 @@ img <- arq %>%
   base64enc::base64encode()
 
 res <- httr::POST(
-  "decryptr.now.sh/rfb",
+  "https://decryptr.now.sh/rfb",
   body = list(
     img = img,
     key = "your-api-key"
