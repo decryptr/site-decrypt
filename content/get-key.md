@@ -12,7 +12,7 @@ description = "Our free web service requires a free key. You can get one by fill
   </p>
   <p>
     <label>Endpoint: 
-      <select name="cars">
+      <select name="endpoint">
         <option value="rfb">RFB</option>
       </select>
     </label>
@@ -22,7 +22,7 @@ description = "Our free web service requires a free key. You can get one by fill
   </p>
   <p>
     <label>
-      <input type="checkbox" name="vehicle" value="Bike"> I agree with the <a href = "/terms-of-service">terms of service</a>.  
+      <input type="checkbox" name="accept-terms-service" value="yes"> I agree with the <a href = "/terms-of-service">terms of service</a>.  
     </label>
   </p>
   
