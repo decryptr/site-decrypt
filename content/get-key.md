@@ -30,3 +30,5 @@ description = "Our free web service requires a free key. You can get one by fill
     <button type="submit">Send</button>
   </p>
 </form>
+
+In less than 24 hours you will receive an e-mail with your API key. 
