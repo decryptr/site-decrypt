@@ -7,7 +7,7 @@ toc = true
 bref = "decryptr is very fast to make predictions once the model is loaded."
 +++
 
-## Benchmark
+### Benchmark
 
 Once loaded to memory, keras models run very quickly Also, we don't run any pre-processing on the image, so decryption is blazing fast.
 
