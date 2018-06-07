@@ -113,5 +113,13 @@ After training the model we should persist it to disk in order to be able to mak
 save_model_hdf5(model, "rfb.hdf5")
 ```
 
-Now your are able to [make predictions for new captchas](/docs/predictions-model-file/).
+When making predictions for a new captcha using a custom model it's important to note the `labs` argument of the function `load_model`. It **must** be the same that you passed to the `read_captcha` when reading the captchas for training.
+
+```
+model <- load_model("rfb.hdf5", labs = c(letters, 0:9))
+captcha <- read_captcha("path-to-captcha")
+decrypt(captcha, model)
+```
+
+You can read more at [*Making predictions for new captchas*](/docs/predictions-model-file/).
 

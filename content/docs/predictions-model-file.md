@@ -15,8 +15,10 @@ First, you will need to load the model to memmory. `decryptr` provides a `load_m
 
 ```
 library(decryptr)
-model <- load_model("model.hdf5")
+model <- load_model("model.hdf5", labs = c(letters, 0:9))
 ```
+
+> It's important to note the `labs` argument of the function `load_model`. It **must** be the same that you passed to the `read_captcha` when reading the captchas for training.
 
 If you want to load a pre-trained model you can use the name found in [this list](/docs/list-models/) with the `load_model` function.
 
