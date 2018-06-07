@@ -39,11 +39,11 @@ bref = "decryptr provides a list of pre-trained models inside the `decryptrModel
       </tr>
       <tr>
         <td><img src="/img/captcha_2a2x.png"<img></td>
-        <td>trt</td>
+        <td>rsc</td>
         <td>yes</td>
         <td>99%</td>
         <td>yes</td>
-        <td><a href="">link</a></td>
+        <td><a href="https://storage.googleapis.com/decryptr/data-raw/rsc.zip">link</a></td>
       </tr>
     </tbody>
 </table>
