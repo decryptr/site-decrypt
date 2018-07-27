@@ -40,3 +40,27 @@ res <- httr::POST(
 )
 ```
 
+### From Shell
+
+Write the following excerpt to a file called `script.sh`.
+
+```
+!/bin/bash
+if [ "$1" != "" ]; then
+  (echo -n '{"img": "'; base64 "$1"; echo -n '", "key": "'; cat "$2"; echo -n '"}') |
+  (curl -s -H "Content-Type: application/json" -d @- https://decryptr.now.sh/rfb) |
+  sed 's/[^[:alnum:]]//g'
+else
+    echo "Coloque o nome do arquivo como argumento"
+fi
+echo
+```
+
+Also write your key to a `.txt` file.
+
+Then to execute the script, run:
+
+```
+chmod +x script.sh
+./script.sh caminho/do/captcha.png caminho/da/key.txt
+```
