@@ -9,7 +9,7 @@ bref = "decryptr offers a free and simple web API that you can use to break capt
 
 ### Making predictions
 
-The web interface needs 2 parameters passed throught a POST request to an endpoint in `https://decryptr-196601.appspot.com`.
+The web interface needs 2 parameters passed throught a POST request to an endpoint in `http://decryptr.pointdns.xyz`.
 The complete list of endpoints can be found [here](/docs/list-models/).
 
 The first parameter, `img`, is a base64 encoded image. The second is the api key which you can obtain [**here**](/get-key).
@@ -31,7 +31,7 @@ img <- arq %>%
 
 # post request
 res <- httr::POST(
-  "https://decryptr-196601.appspot.com/rfb",
+  "http://decryptr.pointdns.xyz/rfb",
   body = list(
     img = img,
     key = "your-api-key"
@@ -48,7 +48,7 @@ Write the following excerpt to a file called `script.sh`.
 !/bin/bash
 if [ "$1" != "" ]; then
   (echo -n '{"img": "'; base64 "$1"; echo -n '", "key": "'; cat "$2"; echo -n '"}') |
-  (curl -s -H "Content-Type: application/json" -d @- https://decryptr-196601.appspot.com/rfb) |
+  (curl -s -H "Content-Type: application/json" -d @- http://decryptr.pointdns.xyz/rfb) |
   sed 's/[^[:alnum:]]//g'
 else
     echo "Coloque o nome do arquivo como argumento"
