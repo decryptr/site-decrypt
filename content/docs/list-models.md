@@ -55,10 +55,10 @@ bref = "decryptr provides a list of pre-trained models inside the `decryptrModel
       </tr>
       <tr>
         <td><img src="/img/nfe.png"<img></td>
-        <td>nfe</td>
-        <td>no</td>
-        <td>-</td>
-        <td>no</td>
+        <td>nfesp</td>
+        <td>yes</td>
+        <td>89%</td>
+        <td>yes</td>
         <td><a href="https://storage.googleapis.com/decryptr/data-raw/nfe.zip">link</a></td>
       </tr>
     </tbody>
