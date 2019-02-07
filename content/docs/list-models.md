@@ -69,6 +69,14 @@ bref = "decryptr provides a list of pre-trained models inside the `decryptrModel
         <td>no</td>
         <td><a href="https://storage.googleapis.com/decryptr/data-raw/sefaz_sp.zip">link</a></td>
       </tr>
+      <tr>
+        <td><img src="/img/sintegra_rj.png"<img></td>
+        <td>sintegra_rj</td>
+        <td>no</td>
+        <td>no</td>
+        <td>no</td>
+        <td><a href="https://storage.googleapis.com/decryptr/data-raw/sintegra_rj.zip">link</a></td>
+      </tr>
     </tbody>
 </table>
 
